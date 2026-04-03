@@ -5,8 +5,9 @@ The SOM analysis in this study is implemented using the somoclu library.
 Python Version: 3.10.19. Somoclu Version: 1.7.6.   
 For detailed installation guides and usage instructions, please refer to the Official Somoclu Documentation (https://somoclu.readthedocs.io/en/stable/).  
 
+Data (GPH/TP/Temp) normalization: Anomalies (x - x_mean) are computed  for each grid-point time series.
+
 Below is a brief overview of the core scripts and their functionalities.  
-0_data_preprocessing: A sample for data detrending and standardization (anomaly calculation).  
 1_SOM_train: SOM model construction, training, and output generation.  
 2_feature: Annual/seasonal node occurrences, frequencies, and trend analysis based on SOM outputs.  
 3_extreme_events: Statistical analysis of annual/seasonal extreme precipitation and temperature events. Plot Fig.4 and Figs.S5-S8.  
