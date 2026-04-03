@@ -5,7 +5,7 @@ The SOM analysis in this study is implemented using the somoclu library.
 Python Version: 3.10.19. Somoclu Version: 1.7.6.   
 For detailed installation guides and usage instructions, please refer to the Official Somoclu Documentation (https://somoclu.readthedocs.io/en/stable/).  
 
-Data (GPH/TP/Temp) normalization: Anomalies (x - x_mean) are computed  for each grid-point time series.
+Data (GPH/TP/Temp) anomalies were calculated by subtracting the 44-year mean values for each calendar day on each grid-point.
 
 Below is a brief overview of the core scripts and their functionalities.  
 1_SOM_train: SOM model construction, training, and output generation.  
